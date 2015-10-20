@@ -7,11 +7,3 @@
     Es soll eine Art Reaktionsspiel sein, bei der das reaktionsschnelle Drücken bestimmter Tasten gefordert wird.
     Jede Tasteneingabe addiert +1 zu einem Zähler dazu. Wenn Wert x erreicht ist, wird die Runde beendet.
     
-3.6 PHP - Aufgaben
-    Es muss möglich sein die Wurfbalken auf Tastdruck auszulösen und zu stoppen.
-    Es muss eine Rechnung festgelegt werden, bei welchen Werten des Wurfes die Hitbox getroffen wird.
-    Es muss eine Zufallsfunktion für die Ausgabe der Tasten geben und einen entsprechenden Zähler, der bei richtiger Eingabe 
-    +1 addiert.
-3.7 HTML _ Aufgaben
-    Es soll eine Startseite geben auf der das Spiel erklärt wird und die auf das eigentliche Spiel weiterleitet.
-    Es gibt einen Startknopf der den Beginn des Spiels einleitet.
