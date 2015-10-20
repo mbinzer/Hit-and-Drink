@@ -1,0 +1,3 @@
+HTML _ Aufgaben 
+16     Es soll eine Startseite geben auf der das Spiel erklärt wird und die auf das eigentliche Spiel weiterleitet. 
+17     Es gibt einen Startknopf der den Beginn des Spiels einleitet. 
