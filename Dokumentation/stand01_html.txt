@@ -1,3 +1,5 @@
 HTML _ Aufgaben 
-16     Es soll eine Startseite geben auf der das Spiel erklärt wird und die auf das eigentliche Spiel weiterleitet. 
-17     Es gibt einen Startknopf der den Beginn des Spiels einleitet. 
+       Es soll eine Startseite geben auf der das Spiel erklärt wird und die auf das eigentliche Spiel weiterleitet. 
+       Es gibt einen Startknopf der den Beginn des Spiels einleitet. 
+       Es gibt die Eigentliche Spiel-Seite auf der die 2 Spieler, 2 Skalen, eine Hitbox, ein bewegliches Objekt und 2 weitere Skalen zur Berechnung des Wurfwinkels angeordnet sind.
+       
