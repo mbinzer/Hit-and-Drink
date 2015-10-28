@@ -1,0 +1,25 @@
+
+header, footer, aside, section {
+	background-color: green;
+	color: white;
+	padding 24px 14px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 2px grey;
+	font: 14px/24px "Lucida console";
+}
+
+footer, header {
+	text-align: center;
+	clear:both;
+}
+
+section {
+	float:left;
+	width:60%;
+}
+
+aside {
+	float:right;
+	width:25%;
+}
