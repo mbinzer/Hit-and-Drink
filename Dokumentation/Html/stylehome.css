@@ -1,12 +1,19 @@
 
-header, footer, aside, section {
+header, footer, section {
 	background-color: green;
 	color: white;
 	padding 24px 14px;
-	margin: 10px;
-	border-radius: 10px;
+	margin: 15px;
+	border-radius: 15px;
 	box-shadow: 2px 2px 5px 2px grey;
-	font: 14px/24px "Lucida console";
+	font: 14px/24px "Helvetica";
+}
+
+aside {
+	background-color: green;
+	color: white;
+	
+	
 }
 
 footer, header {
