@@ -1,6 +1,6 @@
 
 header, footer, aside, section {
-	background-color: green;
+	background-color: blue;
 	color: white;
 	padding 24px 14px;
 	margin: 10px;
@@ -16,7 +16,7 @@ footer, header {
 
 section {
 	text-align: center;
-	float:left;
+	float:center;
 	width:70%;
 }
 
