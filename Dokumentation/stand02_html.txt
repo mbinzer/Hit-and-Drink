@@ -1,0 +1,81 @@
+﻿HTML _ Aufgaben 
+16     Es soll eine Startseite geben auf der das Spiel erklärt wird und die auf das eigentliche Spiel weiterleitet. 
+17     Es gibt einen Startknopf der den Beginn des Spiels einleitet. 
+
+vers1.0.1
+
+- Erste Elemente erstellt
+
+
+vers1.0.2
+
+	Startseite:
+	
+	-Body
+	
+	- Header
+		-eventuell Navigation
+	- Main
+	
+		- Navigation (3 Buttons)
+			- Game-Setup
+			- HowToPlay
+			- Exit
+	
+		- eventuell Aside
+			-Kurzanleitung
+
+	Game Setup:
+
+		2 Seiten
+		
+	1.Seite: nickname
+
+	- Body
+
+	- Header
+		-eventuell Navigation
+	- Main
+		
+		- Form Namensabfrage
+
+	
+	2. Seite: Charakterauswahl
+		
+
+	- Body
+	
+	- Header
+		-eventuell Navigation
+	- Main
+		- Charakterauswahl ( Bild)
+		- 2 Buttons (nächster/zurück)
+
+		- Navigation
+			- Button (START GAME)
+	
+
+	HowToPlay
+
+	- Header
+		-eventuell Navigation
+	- Main
+		- Anleitung
+			(evtl. mehrere Seiten)
+
+	Game
+	
+	- Body
+
+	- Header
+		- anzeigeleisten
+		- name
+	- Main
+		-Spielfeld
+		- Hitbox
+		
+	- Footer
+		- Reaktionsspiel
+	
+
+	
