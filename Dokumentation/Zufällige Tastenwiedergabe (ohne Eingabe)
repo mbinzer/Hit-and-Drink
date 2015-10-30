@@ -1,0 +1,50 @@
+<doctype html!>
+<html>
+	<head>
+			<meta charset=utf-8>
+			<title>Tastengedoens</title>
+		</head>
+	
+
+<?php
+$pktS1 = 0;
+
+//nach jeder richtig getroffenen Taste soll +1, mit
+//$pktS1++;
+
+echo "Punktestand $pktS1<br>";
+
+$tastenS1 = array("W","A","S","D");
+
+echo "Anzahl zu drückender Tasten: ";
+	echo count($tastenS1);
+echo "<br>zu drückende Tasten<br>";
+	for ($i = 0; $i < count($tastenS1); $i++ )
+	{
+	echo $tastenS1[$i],",";
+	}
+?>
+<body>
+		<form action="Zaehler.php" method"post">
+			Vorgegebene Taste eingeben:<br>
+			<input id=TasteneingabeS1 name=TasteneingabeS1 maxlength=1>
+		</form>
+	</body>
+<?php
+	
+// Wiedergabe einer Eingabe
+echo $_GET["TasteneingabeS1"];	
+
+//zufaellige Tastenausgabe bis Pkt = 10
+
+while ($pktS1 < 10) {
+	shuffle($tastenS1);
+	echo "<br>",$tastenS1[0];
+	$pktS1++;
+}
+echo "<br>Punktestand: ",$pktS1;
+
+
+?>
+
+</html>
