@@ -1,27 +1,26 @@
 body{
-	background-color: green;
+	background-image: url("FigurmitFlasche.jpg");
+	background-size: 100% auto;
 	color: white;
 }
 header, footer {
-	background-color: white;
 	color:black;
 	padding 24px 14px;
 	margin: 15px;
 	border-radius: 15px;
 	box-shadow: 2px 2px 5px 2px grey;
 	font: 14px/24px "Helvetica";
+	text-align: center;
+	clear:both;
 }
 
 aside {
 	background-color: green;
 	color: white;
-	
-	
-}
-
-footer, header {
 	text-align: center;
-	clear:both;
+	float:right;
+	width:25%;
+	
 }
 
 section {
@@ -29,7 +28,6 @@ section {
 	float:left;
 	width:70%;
 	height: 500px;
-	background-color: white;
 	color:black;
 	padding 24px 14px;
 	margin: 15px;
@@ -39,17 +37,15 @@ section {
 	
 }
 
-aside {
-	text-align: center;
-	float:right;
-	width:25%;
+nav {
+	
 }
 
 .button {
   font: bold 11px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
+  background-color: #009933;
+  color: white;
   padding: 2px 6px 2px 6px;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
