@@ -17,35 +17,28 @@
 	<body>
 		<header>
 			<h1>Game-Setup</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="Home.html">Menü</a>
+					</li>
+					<li>
+						<a href="CharakterSetup.html">Charakter Auswahl</a>
+					</li>
+				</ul>
 		</header>
 		
 		<main>
 			<article>
-				<h1>Character - Setup</h1>
+				<h1>Game - Setup</h1>
 				<section>
+					
 					<h3>Wie heißt du?<h3>
 					<form> nick: <input name=username required>
 					</form>
 					
 				</section>
-				<section>
-					<h3>Typ<h3>
-					<form>
-						<input type=button value=weiter onclick=function()>
-						<input type=button value=zurück onclick=function()>	
-					</form>
-				</section>
 				
-				<footer>
-					<nav>
-						<a href=Home.html>
-							<button type="button">Main-Menü</button>
-						</a>
-						<a href=Game.html>
-							<button type="button">Start Game</button>
-						</a>
-					</nav>
-				</footer>
 			</article>
 		</main>		
 	</body>

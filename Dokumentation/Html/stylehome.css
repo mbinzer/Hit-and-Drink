@@ -1,9 +1,10 @@
 body{
 	background-color: green;
+	color: white;
 }
 header, footer {
-	background-color: green;
-	color: white;
+	background-color: white;
+	color:black;
 	padding 24px 14px;
 	margin: 15px;
 	border-radius: 15px;
@@ -29,6 +30,7 @@ section {
 	width:70%;
 	height: 500px;
 	background-color: white;
+	color:black;
 	padding 24px 14px;
 	margin: 15px;
 	border-radius: 15px;
