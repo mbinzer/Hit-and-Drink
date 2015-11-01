@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-
-<html lang=de>
-	
-	<head>
-	
-		<meta charset=utf-8>
-		<title></title>
-		
-	</head>
-	
-	<body>
-	
-	</body>
-	
-	
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script>
+    function draw(x,y) {
+      var canvas = document.getElementById('canvas');
+      var c = canvas.getContext('2d');
+      c.save();
+      c.clearRect(0,0,550,400);
+      c.fillStyle = "rgba(0,200,0,1)";
+      c.fillRect (x, y, 50, 50);
+      c.restore();
+      x += 2;
+      y += 3;
+      var sleep = setTimeout(draw, 20, x, y);
+    }
+  </script>
+  <style>
+    #canvas {
+      border:#666 1px solid;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="draw(0,0)">Draw</button>
+  <canvas id="canvas" width="550" height="400"></canvas>
+  
+</body>
 </html>
