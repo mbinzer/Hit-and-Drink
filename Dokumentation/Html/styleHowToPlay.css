@@ -20,8 +20,7 @@ section {
 	width:70%;
 }
 
-aside {
-	text-align: center;
-	float:right;
-	width:25%;
+ul {
+	list-style-type: none;
 }
+
