@@ -10,7 +10,7 @@
 	<head>
 		<meta charset=utf-8 />
 		<title>Game Setup</title>
-		<link rel= stylesheet href=stylehome.css>
+		<link rel= stylesheet href= gameSetup.css>
 	</head>
 	
 	
