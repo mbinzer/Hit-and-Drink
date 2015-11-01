@@ -1,26 +1,43 @@
-
-header, footer, aside, section {
-	background-color: blue;
+body {
+	background-color: #6F6F7A;
 	color: white;
-	padding 24px 14px;
-	margin: 10px;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px 2px grey;
-	font: 14px/24px "Lucida console";
 }
 
-footer, header {
+.button {
+	color: #FFFFFF;
+	height: 0px;
+	width: ;
+	/*+placement: 3px;*/
+	position: relative;
+	left: 3px;
+	top: 3px;
+	line-height: 2.9;
+	border: 1px solid #166C3D;
+	background-color: #0B8B16;
+	font-family: Helvetica;
+	text-decoration: none;
+	padding: 10px;
+}
+
+h1 {
+}
+
+header {
 	text-align: center;
-	clear:both;
+	font-family: Helvetica;
+	background-color: ;
 }
 
 section {
+	background-color: #FFFFFF;
 	text-align: center;
-	float:center;
-	width:70%;
+	float: left;
+	width: 100%;
+	padding: 0px 0px 300px 0px;
+	background-image:FigurmitFlasche.png;
+	color: #000000;
 }
 
 ul {
 	list-style-type: none;
 }
-
