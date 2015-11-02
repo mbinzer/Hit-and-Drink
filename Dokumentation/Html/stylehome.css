@@ -7,16 +7,26 @@ body {
 	color: #FFFFFF;
 	height: 0px;
 	width: ;
-	/*+placement: -13px 92px;*/
+	/*+placement: 0px 58px;*/
 	position: relative;
-	left: -13px;
-	top: 92px;
+	left: 0px;
+	top: 58px;
 	line-height: 2.9;
 	border: 1px solid #166C3D;
 	background-color: #0B8B16;
 	font-family: Helvetica;
 	text-decoration: none;
 	padding: 10px;
+	/*+border-radius: 30px;*/
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-khtml-border-radius: 30px;
+	border-radius: 30px;
+	font-size: 146%;
+}
+
+.button:hover {
+	border-radius: 50%;
 }
 
 h1 {
@@ -35,7 +45,6 @@ section {
 	width: 100%;
 	padding: 0px 0px 216px 0px;
 	background-image:FigurmitFlasche.png;
-	
 }
 
 ul {
