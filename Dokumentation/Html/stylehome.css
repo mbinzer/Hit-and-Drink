@@ -23,6 +23,10 @@ body {
 	-khtml-border-radius: 30px;
 	border-radius: 30px;
 	font-size: 146%;
+	/*+box-shadow: -1px -6px 9px -1px #097412;*/
+	-moz-box-shadow: -1px -6px 9px -1px #097412;
+	-webkit-box-shadow: -1px -6px 9px -1px #097412;
+	box-shadow: -1px -6px 9px -1px #097412;
 }
 
 .button:hover {
@@ -44,7 +48,11 @@ section {
 	float: left;
 	width: 100%;
 	padding: 0px 0px 216px 0px;
-	background-image:FigurmitFlasche.png;
+	background-image: url(FigurmitFlasche.jpg);
+	background-size: cover;
+	background-repeat: repeat no-repeat;
+	background-position: center;
+	
 }
 
 ul {
