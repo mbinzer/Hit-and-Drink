@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8" />
+  <link rel=stylesheet href=game.css>
   <title></title>
   <script>
     function draw(x,y) {
@@ -14,7 +15,7 @@
       c.restore();
       x += 2;
       y += 3;
-      var sleep = setTimeout(draw, 20, x, y);
+      var wait = setTimeout(draw, 20, x, y);
     }
   </script>
   <style>
@@ -23,9 +24,15 @@
     }
   </style>
 </head>
-<body>
-  <button onclick="draw(0,0)">Draw</button>
-  <canvas id="canvas" width="550" height="400"></canvas>
-  
-</body>
+	<body>
+		<header>
+			<nav>
+				<a href=Home.html class="button">Menü</a>
+			</nav>
+		</header>
+		<section>
+			  <button onclick="draw(0,0)">Start</button>
+			  <canvas id="canvas" width="550" height="400"></canvas>
+		</section>
+	</body>
 </html>
