@@ -20,18 +20,15 @@ document.onkeyup = function(event){
 	document.getElementById('counter').innerHTML = count;
 }
 
-var keys = ["W", "A", "S", "D"];
-document.getElementById('ungemischt').innerHTML = keys;
+var keys = new Array("W", "A", "S", "D");
 
-function shuffleArray(keys) {
-    for (var i = keys.length - 1; i > 0; i--) {
+function shuffleArray() {
+	for (var i = keys.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
-        var temp =keys[i];
-        keys[i] = keys[j];
-        keys[j] = temp;
+		document.getElementById('ungemischt').innerHTML = keys[j];
     }
-    return keys;
-	document.getElementById('ungemischt').innerHTML = keys;
+	
+
 }
 
 
@@ -46,6 +43,9 @@ function shuffleArray(keys) {
 
 <p> Counter: <span id="counter"></span> </p>
 <p> Array-Ausgabe: <span id="ungemischt"></span>
-<button onclick="shuffleArray()">Shuffle</button>
+	<br />
+	<p>
+	<button onclick="shuffleArray()">Shuffle</button>
+	</p>
 </body>
 </html>
