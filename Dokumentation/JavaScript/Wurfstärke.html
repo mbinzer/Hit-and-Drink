@@ -6,9 +6,7 @@ document.onkeydown = function(event) {
 	
 		var score = 0;
 		var count = 0;
-		var key_press = String.fromCharCode(event.keyCode);
 		var key_code = event.keyCode;
-		document.getElementById('kp').innerHTML = key_press;
 		document.getElementById('kc').innerHTML = key_code;
 		
 		
@@ -18,50 +16,49 @@ document.onkeydown = function(event) {
 				counterLoop();
 				break;
 			case 190:
-				count = 2;
+				count = 0;
+				stop();
 				break;
 		}
 		
-		document.getElementById('zahl').innerHTML = count;
+		document.getElementById('zahl').innerHTML = count;		
 		
 		function counterLoop() {
-			setTimeout(function () {
+				loop = setTimeout(function () {
 				score++;
-				alert(score);
-				if(event.keyCode == 173 && score < 5) {
+				document.getElementById('stand').innerHTML = score;
+				if(event.keyCode == 173 && score < 10) {
 					counterLoop();
 				}
-				else {
+				else if(event.keyCode == 173 && score ==10) {
 					counterLoopR();
 				}
-			},1000)
+			},500)
 		}
 		
 		function counterLoopR() {
-			setTimeout(function () {
+				loop = setTimeout(function () {
 				score--;
-				alert(score);
+				document.getElementById('stand').innerHTML = score;
 				if(event.keyCode == 173 && score > 0) {
 					counterLoopR();
 				}
 				else {
 					counterLoop();
 				}
-			},1000)
+			},500)
 		}
-		 
-		document.getElementById('stand').innerHTML = score;
-	
+
+		function stop() {
+			clearTimeout(loop);
+		}
+		
 }
-document.onkeyup = function(event){
-    var key_press = String.fromCharCode(event.keyCode);
-}
+
 
 </script>
 <h2>Wurffunktion Staerke Counter</h2>
 <h3>start mit "-" und Stop mit "."</h3>
-Key Pressed : <span id="kp"></span>
-<br />
 Key Code : <span id="kc"></span>
 <br />
 Counter : <span id="zahl"></span>
