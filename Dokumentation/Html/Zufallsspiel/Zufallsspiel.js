@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<script>
 
 var count = 0;
 document.onkeyup = function(event){
@@ -35,17 +33,3 @@ function shuffleArray(keys) {
 }
 
 
-   
-
-</script>
-
-<html>
-
-<body>
-	<p>Zufallsspiel-Entwurf</p>
-
-<p> Counter: <span id="counter"></span> </p>
-<p> Array-Ausgabe: <span id="ungemischt"></span>
-<button onclick="shuffleArray()">Shuffle</button>
-</body>
-</html>

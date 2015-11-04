@@ -2,27 +2,8 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <link rel=stylesheet href=game.css>
-  <title></title>
-  <script>
-    function draw(x,y) {
-      var canvas = document.getElementById('canvas');
-      var c = canvas.getContext('2d');
-      c.save();
-      c.clearRect(0,0,550,400);
-      c.fillStyle = "rgba(0,200,0,1)";
-      c.fillRect (x, y, 50, 50);
-      c.restore();
-      x += 2;
-      y += 3;
-      var wait = setTimeout(draw, 20, x, y);
-    }
-  </script>
-  <style>
-    #canvas {
-      border:#666 1px solid;
-    }
-  </style>
+  <link rel=stylesheet href=gametest.css>
+  <title>GameTest</title>
 </head>
 	<body>
 		<header>
@@ -34,5 +15,6 @@
 			  <button onclick="draw(0,0)">Start</button>
 			  <canvas id="canvas" width="550" height="400"></canvas>
 		</section>
+		<script src="gametest.js"></script>
 	</body>
 </html>
