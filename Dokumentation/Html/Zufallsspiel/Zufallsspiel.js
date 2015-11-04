@@ -21,15 +21,14 @@ document.onkeyup = function(event){
 var keys = ["W", "A", "S", "D"];
 document.getElementById('ungemischt').innerHTML = keys;
 
-function shuffleArray(keys) {
+function shuffleArray() {
     for (var i = keys.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp =keys[i];
         keys[i] = keys[j];
         keys[j] = temp;
     }
-    return keys;
-	document.getElementById('ungemischt').innerHTML = keys;
+   	document.getElementById('ungemischt').innerHTML = keys;
 }
 
 
