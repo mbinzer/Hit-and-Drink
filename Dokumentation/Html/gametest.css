@@ -1,4 +1,50 @@
-   
-#canvas {
+body {
+	background-color: #6F6F7A;
+	color: white;
+}
+
+.button {
+	color: #FFFFFF;
+	height: 0px;
+	width: ;
+	/*+placement: 3px;*/
+	position: relative;
+	left: 3px;
+	top: 3px;
+	line-height: 2.9;
+	border: 1px solid #166C3D;
+	background-color: #0B8B16;
+	font-family: Helvetica;
+	text-decoration: none;
+	padding: 10px;
+}
+
+h1 {
+}
+
+header {
+	text-align: center;
+	font-family: Helvetica;
+	background-color: ;
+}
+
+section {
+	background-color: #FFFFFF;
+	text-align: center;
+	float: left;
+	width: 100%;
+	padding: 0px 0px 300px 0px;
+	background-image:FigurmitFlasche.png;
+	color: #000000;
+}
+
+ul {
+	list-style-type: none;
+}
+
+canvas {
   border:#666 1px solid;
+  width: 90%;
+  height: 70%;
+  position: relative;
 }
