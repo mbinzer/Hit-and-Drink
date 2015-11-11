@@ -43,8 +43,28 @@ ul {
 }
 
 canvas {
-  border:#666 1px solid;
-  width: 90%;
-  height: 70%;
-  position: relative;
+	border: #666 1px solid;
+	width: 60%;
+	height: 50%;
+	position: absolute;
+	float: left;
+	/*+placement: 147px 36px;*/
+	position: relative;
+	left: 147px;
+	top: 36px;
+}
+
+#background_canvas {
+	/*+placement: 147px -212px;*/
+	position: relative;
+	left: 147px;
+	top: -212px;
+}
+
+button {
+	/*+placement: -322px 363px;*/
+	position: relative;
+	left: -322px;
+	top: 363px;
+	color: #FFFFFF;
 }
