@@ -3,23 +3,6 @@ body {
 	color: white;
 }
 
-canvas#canvas {
-	background-color: white;
-	/*+placement: -26px 1px;*/
-	position: relative;
-	left: -26px;
-	top: 1px;
-	padding-top: 22px;
-	padding-right: 205px;
-}
-
-button {
-	/*+placement: 370px 41px;*/
-	position: relative;
-	left: 370px;
-	top: 41px;
-}
-
 .button {
 	color: #FFFFFF;
 	height: 0px;
@@ -46,15 +29,22 @@ header {
 }
 
 section {
+	background-color: #FFFFFF;
 	text-align: center;
 	float: left;
 	width: 100%;
 	padding: 0px 0px 300px 0px;
 	background-image:FigurmitFlasche.png;
 	color: #000000;
-	background-color: #6F6F7A;
 }
 
 ul {
 	list-style-type: none;
+}
+
+canvas {
+  border:#666 1px solid;
+  width: 90%;
+  height: 70%;
+  position: relative;
 }

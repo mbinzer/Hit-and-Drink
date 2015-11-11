@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<script>
 
 var count = 0;
 document.onkeyup = function(event){
@@ -22,30 +20,38 @@ document.onkeyup = function(event){
 
 var keys = ["W", "A", "S", "D"];
 document.getElementById('ungemischt').innerHTML = keys;
+var push_key;
 
-function shuffleArray(keys) {
+function shuffleArray() {
     for (var i = keys.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp =keys[i];
         keys[i] = keys[j];
         keys[j] = temp;
+		document.getElementById('ungemischt').innerHTML = keys[j];
+		
+		var push_key = keys[j].getKeyCode;
     }
-    return keys;
-	document.getElementById('ungemischt').innerHTML = keys;
+   
 }
 
 
-   
+var strike_count = 0;
+var wrong_key = true;
 
-</script>
+function test_key(event){
+	var x = event.which || event.keyCode;
+		
+		while(wrong_key){
+			if(x == push_key) {
+				strike_count++;
+				break;
+			}
+			
+		}
+		
+							
+	document.getElementById('strike_counter').innerHTML = strike_count;
+}
 
-<html>
 
-<body>
-	<p>Zufallsspiel-Entwurf</p>
-
-<p> Counter: <span id="counter"></span> </p>
-<p> Array-Ausgabe: <span id="ungemischt"></span>
-<button onclick="shuffleArray()">Shuffle</button>
-</body>
-</html>
