@@ -4,13 +4,13 @@
 	
 document.onkeydown = function(event) {
 	
-		var score = 0;
-		var count = 0;
-		var key_code = event.keyCode;
+		var score = 0;											// Zählstand
+		var count = 0;											
+		var key_code = event.keyCode;					
 		document.getElementById('kc').innerHTML = key_code;
 		
 		
-		switch(event.keyCode) {
+		switch(event.keyCode) {									// Zähler auslösen bzw stoppen
 			case 173:
 				count = 1;
 				counterLoop();
@@ -23,20 +23,20 @@ document.onkeydown = function(event) {
 		
 		document.getElementById('zahl').innerHTML = count;		
 		
-		function counterLoop() {
-				loop = setTimeout(function () {
-				score++;
-				document.getElementById('stand').innerHTML = score;
-				if(event.keyCode == 173 && score < 10) {
-					counterLoop();
+		function counterLoop() {										// Hochzähl-Schleife
+				loop = setTimeout(function () {							//Verzögerung starten
+				score++;												//Zählerstand erhöhen
+				document.getElementById('stand').innerHTML = score;		//Zählerstand ausgeben
+				if(event.keyCode == 173 && score < 10) {				//Bis 10 hochzählen
+					counterLoop();										
 				}
-				else if(event.keyCode == 173 && score ==10) {
+				else if(event.keyCode == 173 && score ==10) {			//dann auf Runterzähl-Loop wechseln
 					counterLoopR();
 				}
-			},500)
+			},500)														//Verzögerungsspanne
 		}
 		
-		function counterLoopR() {
+		function counterLoopR() {										//Runterzähl-Schleife
 				loop = setTimeout(function () {
 				score--;
 				document.getElementById('stand').innerHTML = score;
@@ -49,7 +49,7 @@ document.onkeydown = function(event) {
 			},500)
 		}
 
-		function stop() {
+		function stop() {												//Stopfunktion 
 			clearTimeout(loop);
 		}
 		
